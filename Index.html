@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My To Do List</title>
+
+    <link rel="stylesheet" href="gaya.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <p class="subjudul">MY DAILY PLANNER</p>
+      <h1>My To Do List</h1>
+      <p class="deskripsi">
+        Catat semua tugasmu dan selesaikan satu per satu 
+      </p>
+        </header>
+
+  <div class="input-area">
+    <input
+      type="text"
+        id="inputTugas"
+        placeholder="Masukkan tugas baru..."
+        >
+      <button id="tombolTambah">
+      Tambah
+      </button>
+  </div>
+
+  <!-- STATISTIK -->
+  <div class="statistik">
+    <div class="statistik-box total">
+    <h2 id="totalTugas">0</h2>
+    <p>Total Tugas</p>
+    </div>
+            
+    <div class="statistik-box selesai">
+      <h2 id="tugasSelesai">0</h2>
+      <p>Selesai</p>
+      </div>
+
+    <div class="statistik-box belum">
+    <h2 id="tugasBelumSelesai">0</h2>
+    <p>Belum Selesai</p>
+    </div>
+    </div>
+
+        <!-- DAFTAR TUGAS -->
+  <section class="daftar-area">
+    <h2>Daftar Tugas</h2>
+    <ul id="daftarTugas"></ul>
+    </section>
+    </div>
+
+    <footer>
+    Semangat menyelesaikan tugas!
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

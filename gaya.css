@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    background-color: #FFF4C2;
+    color: #3E3424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 20px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background-color: #FFFDF5;
+    padding: 40px;
+    border: 3px solid #3F7CAC;
+    border-radius: 24px;
+    box-shadow: 8px 8px 0 #FFD43B;
+}
+
+
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.subjudul {
+    display: inline-block;
+    background-color: #3F7CAC;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #3E3424;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+
+.deskripsi {
+    color: #665A45;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+
+#inputTugas {
+    flex: 1;
+    height: 52px;
+    padding: 0 18px;
+    border: 3px solid #D9C77A;
+    border-radius: 14px;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #3E3424;
+    background-color: #FFFFFF;
+    transition: 0.2s;
+}
+
+
+#inputTugas::placeholder {
+    color: #99906F;
+}
+
+#inputTugas:focus {
+    border-color: #3F7CAC;
+    box-shadow: 4px 4px 0 #B8D5E6;
+}
+
+
+#tombolTambah {
+    width: 115px;
+    border: 3px solid #D3A900;
+    border-radius: 14px;
+    background-color: #FFD43B;
+    color: #3E3424;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #D3A900;
+    transition: 0.15s;
+}
+
+
+#tombolTambah:hover {
+    background-color: #FFC928;
+}
+
+
+#tombolTambah:active {
+    transform: translate(3px, 3px);
+    box-shadow: 1px 1px 0 #D3A900;
+}
+
+
+.statistik {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.statistik-box {
+    padding: 17px 10px;
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid;
+}
+
+
+.statistik-box h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+
+.statistik-box p {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.total {
+    background-color: #FFF0A3;
+    border-color: #E1BD26;
+    color: #806200;
+}
+
+
+.selesai {
+    background-color: #DDF2DD;
+    border-color: #4CAF50;
+    color: #367A3A;
+}
+
+.belum {
+    background-color: #DCECF7;
+    border-color: #3F7CAC;
+   color: #315F7C;
+}
+
+.daftar-area h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: #3E3424;
+    margin-bottom: 15px;
+}
+
+
+#daftarTugas {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+
+.tugas-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 15px;
+    background-color: #FFFFFF;
+    border: 2px solid #E4DDBF;
+    border-radius: 14px;
+    transition: 0.15s;
+}
+
+.tugas-item:hover {
+    border-color: #3F7CAC;
+    background-color: #F5FAFD;
+    transform: translateX(3px);
+}
+
+
+.checkbox-tugas {
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    accent-color: #4CAF50;
+}
+
+
+.teks-tugas {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 700;
+    color: #4B4030;
+    line-height: 1.5;
+}
+
+
+.tugas-item.completed {
+    background-color: #E8F6E8;
+    border-color: #4CAF50;
+}
+
+
+.tugas-item.completed .teks-tugas {
+    text-decoration: line-through;
+    color: #7C8A7C;
+}
+
+.tombol-hapus {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #D85B5B;
+    border-radius: 10px;
+    background-color: #FFE1E1;
+    color: #C43F3F;
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.tombol-hapus:hover {
+    background-color: #FFCACA;
+    transform: scale(1.08);
+}
+
+
+.tugas-kosong {
+    text-align: center;
+    padding: 28px 15px;
+    color: #82775F;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+footer {
+    margin-top: 22px;
+    color: #5D523E;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 30px 15px;
+    }
+
+
+    .container {
+        padding: 25px 20px;
+        box-shadow: 5px 5px 0 #FFD43B;
+    }
+
+
+    h1 {
+        font-size: 29px;
+    }
+
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    #tombolTambah {
+        width: 100%;
+        height: 50px;
+    }
+
+    .statistik {
+        grid-template-columns: 1fr;
+    }
+}
